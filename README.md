@@ -1,6 +1,6 @@
 ## hPID
 
-Two disparate mechanisms, namely *specific* button model versus *nonspecific* button model, have been proposed to explain robust somatic homolog pairing in *Drosophila*; yet, how homolog pairing shapes 3D genome remains poorly understood. Here, we performed Brownian dynamics simulations of these two models by considering the following papers:
+Two alternative mechanisms, namely *specific* button model versus *nonspecific* button model, have been proposed to explain robust somatic homolog pairing in *Drosophila*; yet, how homolog pairing shapes 3D genome remains poorly understood. Here, we performed Brownian dynamics simulations of these two models by considering the following papers:
 - M. B. Child VI, J. R. Bateman, A. Jahangiri, A. Reimer, N. C. Lammers, N. Sabouni, D. Villamarin, G. C. McKenzie-Smith, J. E. Johnson, D. Jost, and H. G. Garcia, [Live imaging and biophysical modeling support a button-based mechanism of somatic homolog pairing in *Drosophila*](https://elifesciences.org/articles/64412), eLife 10, e64412 (2021).
 - W. F. Marshall, and J. C. Fung, [Modeling homologous chromosome recognition via nonspecific interactions](https://www.pnas.org/doi/10.1073/pnas.2317373121), PNAS 121, e2317373121 (2024).
 
@@ -17,7 +17,7 @@ Codes written in Python and [Gnuplot](https://gnuplot.sourceforge.net/) to repro
   - [pid.nb.py](codes/pid.nb.py) (A Python script to simulate *nonspecific* button model)
   - [pid.sb.py](codes/pid.sb.py) (A Python script to simulate *specific* button model)
   - [pid.bb.py](codes/pid.bb.py) (A Python script to simulate *bubble-chain* model)
-  - [pid.xb.xyz2h5.py](codes/pid.xb.xyz2h5.py) (A Python script to change simulation trajectories into HDF5 format)
+  - [pid.xb.xyz2h5.py](codes/pid.xb.xyz2h5.py) (A Python script to change the format of simulation trajectories into HDF5)
   - [pid.xb.h5px.dist.py](codes/pid.xb.h5px.dist.py) (A Python script to calculate the contact map based on trajectories)
   - [mdRandomSeeds](codes/mdRandomSeeds) (A TXT file of random number seeds)
   - [reds.pal](codes/reds.pal) (A Gnuplot color palette file)
