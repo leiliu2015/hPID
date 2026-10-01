@@ -8,7 +8,7 @@ Based on the results, a *bubble-chain* model is proposed which clarifies the geo
 
 ### System Requirements
 
-Codes written in Python and [Gnuplot](https://gnuplot.sourceforge.net/) to reproduce most results in our recent [work]() are archived in this repository, which have been tested on ubuntu 18.04/20.04 LTS. We recommend [Anaconda](https://www.anaconda.com/) to manage the Python environment (*>=3.7*) and packages, including [Numpy](https://numpy.org) and [Numba](numba.pydata.org). The latter is essential to shorten the running time of simulations. 
+Codes written in Python and [Gnuplot](https://gnuplot.sourceforge.net/) to reproduce the main results in our recent [work]() are archived in this repository, which have been tested on ubuntu 18.04/20.04 LTS. We recommend [Anaconda](https://www.anaconda.com/) to manage the Python environment (*>=3.7*) and packages, including [Numpy](https://numpy.org) and [Numba](numba.pydata.org). The latter is essential to shorten the running time of these simulations. 
 
 ### File Description
 - codes/
@@ -26,12 +26,12 @@ Codes written in Python and [Gnuplot](https://gnuplot.sourceforge.net/) to repro
   - [tutorial-nb.gnu](nonspecific-button/tutorial-nb.gnu) (A Gnuplot script to visualize the modeling results)
   - backup/ (A backup of the simulation results for reference)
 - other directories/
-  - Similar to [nonspecific-button/](nonspecific-button/), each directory contains one BASH script and one Gnuplot script for one different model. 
+  - Similar to [nonspecific-button/](nonspecific-button/), each directory contains one BASH script, one Gnuplot script, and one backup subfolder for the model with a name of that directory. 
 - [clearAll.sh](clearAll.sh) (A BASH script to delete all outputs) 
 
 ### User Guide
 
-Taking nonspecific button model as an example, first, open your terminal and run the BASH script 
+Taking the nonspecific button model as an example, first, open your terminal and run the BASH script 
 ```
 $ cd ./nonspecific-button
 $ bash ./tutorial-nb.sh
@@ -42,7 +42,7 @@ $ gnuplot -persist tutorial-nb.gnu
 ```
 Each simulation is composed of two stages, and the button-based mechanisms are switched on *only* in the second stage. The Gnuplot script shows the time dependence of the end-to-end distance of the polymer chains (*R<sub>ee</sub>*), the fraction of correctly paired buttons (*f<sub>pair</sub>*), the final configurations of the system, and the time-averaged contact probability map (*p<sub>ij</sub>*). To plot results in the backup folder, set the variable `fd` in the first line of [tutorial-nb.gnu](nonspecific-button/tutorial-nb.gnu) to `'backup/'`. 
 
-The other two models can be simulated in a similar manner. The approximate running time for each tutorial and their related figure indices in our [preprint]() are listed in the following table. *Note* that the total simulation time of these tutorials, which can be specified by changing the value of the variable `numberOfSteps` in the modeling scripts, has been reduced to 1/50 of that in the paper. 
+The other two models can be simulated in a similar way. The approximate running time for each tutorial and the indices of the related figures in our [preprint]() are listed below. *Note* that the total simulation time of these tutorials, which can be specified by changing the value of the variable `numberOfSteps` in the modeling scripts, has been reduced to 1/50 of that in the paper. 
 
 | Directory | Running Time (min) | Figure |
 | --------- | ------------------ | -------|
